@@ -41,3 +41,6 @@ ADDRESS_AUTOCOMPLETE_API_KEY=############################
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+![Package screenshot](https://pbs.twimg.com/media/DlnCDrbX0AAi1fw.jpg)
+
