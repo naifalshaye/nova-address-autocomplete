@@ -1,6 +1,6 @@
 ## Nova Address AutoComplete Field
 
-An address field that autocomplete the user input to show suggested addressess using Google Place service.
+An address field that autocomplete the user input to show suggested addresses using Google Place service.
 
 ## Installation
 
