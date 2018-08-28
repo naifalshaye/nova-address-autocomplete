@@ -20,17 +20,16 @@ AddressAutocomplete::make('Address'),
 //You can add a country or countries to autocomplete or leave empty for all.
           
 // Specify a single country
-
 AddressAutocomplete::make('Address')
-          ->countries('SA'),
+          ->countries('US'),
                 
 // Specify multiple countries [array]
-
 AddressAutocomplete::make('Address')
-          ->countries(['SA','US']),
+          ->countries(['US','AU]),
 ```
 
 Add the below to nova/resources/views/layout.blade.php
+* To get resualts in specific language add (&language=en) to the below
 
 ```php
 
