@@ -16,7 +16,18 @@ Add the below to Nova/User.php resource:
 ```php
 
 AddressAutocomplete::make('Address'),
+
+//You can add a country or countries to autocomplete or leave empty for all.
+          
+// Specify a single country
+
+AddressAutocomplete::make('Address')
+                ->countries('SA'),
                 
+// Specify multiple countries
+
+AddressAutocomplete::make('Address')
+                ->countries(['SA','US']),
 ```
 
 Add the below to nova/resources/views/layout.blade.php
