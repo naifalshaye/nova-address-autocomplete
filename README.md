@@ -22,12 +22,12 @@ AddressAutocomplete::make('Address'),
 // Specify a single country
 
 AddressAutocomplete::make('Address')
-                ->countries('SA'),
+          ->countries('SA'),
                 
-// Specify multiple countries
+// Specify multiple countries [array]
 
 AddressAutocomplete::make('Address')
-                ->countries(['SA','US']),
+          ->countries(['SA','US']),
 ```
 
 Add the below to nova/resources/views/layout.blade.php
