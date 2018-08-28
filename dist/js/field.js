@@ -177,7 +177,7 @@ module.exports = function normalizeComponent (
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-module.exports = __webpack_require__(13);
+module.exports = __webpack_require__(16);
 
 
 /***/ }),
@@ -363,7 +363,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = __webpack_require__(10)
 /* template */
-var __vue_template__ = __webpack_require__(12)
+var __vue_template__ = __webpack_require__(15)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -409,8 +409,9 @@ module.exports = Component.exports
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_laravel_nova__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_google_autocomplete__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_google_autocomplete__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_google_autocomplete___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_google_autocomplete__);
+//
 //
 //
 //
@@ -10609,70 +10610,12 @@ module.exports = g;
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "default-field",
-    { attrs: { field: _vm.field } },
-    [
-      _c("template", { slot: "field" }, [
-        _c(
-          "div",
-          { staticClass: "form-group" },
-          [
-            _c("vue-google-autocomplete", {
-              ref: "address",
-              staticClass: "w-full form-control form-input form-input-bordered",
-              class: _vm.errorClasses,
-              attrs: { id: "map", placeholder: _vm.field.name },
-              on: { placechanged: _vm.getAddressData }
-            })
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _vm.hasError
-          ? _c("p", { staticClass: "my-2 text-danger" }, [
-              _vm._v("\n            " + _vm._s(_vm.firstError) + "\n        ")
-            ])
-          : _vm._e()
-      ])
-    ],
-    2
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-c023248a", module.exports)
-  }
-}
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(19)
+var __vue_script__ = __webpack_require__(13)
 /* template */
-var __vue_template__ = __webpack_require__(20)
+var __vue_template__ = __webpack_require__(14)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -10711,7 +10654,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 19 */
+/* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11129,7 +11072,7 @@ var REGIONS_TYPE = ['locality', 'sublocality', 'postal_code', 'country', 'admini
 });
 
 /***/ }),
-/* 20 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -11177,6 +11120,64 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-a72a90ea", module.exports)
   }
 }
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "default-field",
+    { attrs: { field: _vm.field } },
+    [
+      _c("template", { slot: "field" }, [
+        _c(
+          "div",
+          { staticClass: "form-group" },
+          [
+            _c("vue-google-autocomplete", {
+              ref: "address",
+              staticClass: "w-full form-control form-input form-input-bordered",
+              class: _vm.errorClasses,
+              attrs: {
+                id: "map",
+                placeholder: _vm.field.name,
+                country: _vm.field.countries
+              },
+              on: { placechanged: _vm.getAddressData }
+            })
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _vm.hasError
+          ? _c("p", { staticClass: "my-2 text-danger" }, [
+              _vm._v("\n            " + _vm._s(_vm.firstError) + "\n        ")
+            ])
+          : _vm._e()
+      ])
+    ],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-c023248a", module.exports)
+  }
+}
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

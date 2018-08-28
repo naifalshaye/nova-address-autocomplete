@@ -12,4 +12,10 @@ class AddressAutocomplete extends Field
      * @var string
      */
     public $component = 'address_autocomplete';
+
+    public function countries($list){
+        return $this->withMeta([
+            'countries' => $list
+        ]);
+    }
 }

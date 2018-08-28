@@ -8,6 +8,7 @@
                         class="w-full form-control form-input form-input-bordered"
                         :class="errorClasses"
                         :placeholder="field.name"
+                        :country="field.countries"
                         v-on:placechanged="getAddressData">
                 </vue-google-autocomplete>
             </div>
