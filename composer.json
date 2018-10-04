@@ -1,6 +1,6 @@
 {
     "name": "naif/address_autocomplete",
-    "description": "A Laravel Nova field.",
+    "description": "An address field that autocomplete the user input to show suggested addresses using Google Place service.",
     "keywords": [
         "laravel",
         "nova"
