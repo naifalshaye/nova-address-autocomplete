@@ -4,7 +4,7 @@
             <div class="form-group">
                 <vue-google-autocomplete
                         ref="address"
-                        id="map"
+                        :id="field.name"
                         class="w-full form-control form-input form-input-bordered"
                         :class="errorClasses"
                         :placeholder="field.name"
