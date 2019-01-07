@@ -25,7 +25,7 @@ AddressAutocomplete::make('Address')
                 
 // Specify multiple countries [array]
 AddressAutocomplete::make('Address')
-          ->countries(['US','AU]),
+          ->countries(['US','AU']),
 ```
 
 Add the below to nova/resources/views/layout.blade.php
@@ -49,6 +49,11 @@ ADDRESS_AUTOCOMPLETE_API_KEY=############################
 ```
 
 ![Package screenshot](https://pbs.twimg.com/media/DlnCDrbX0AAi1fw.jpg)
+
+## Support:
+naif@naif.io
+
+https://www.linkedin.com/in/naif
 
 ## License
 
