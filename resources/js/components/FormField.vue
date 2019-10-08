@@ -37,7 +37,7 @@ export default {
     },
     methods: {
         getAddressData: function (addressData, placeResultData, id) {
-            this.address = addressData;
+            this.handleChange(placeResultData.formatted_address)
         },
         /*
          * Set the initial, internal value for the field.
